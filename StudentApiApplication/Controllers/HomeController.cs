@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
 namespace StudentApiApplication.Controllers
 {
@@ -12,6 +8,12 @@ namespace StudentApiApplication.Controllers
         {
             ViewBag.Title = "Home Page";
 
+            return View();
+        }
+
+        public ActionResult Data()
+        {
+            ViewBag.Title = "Student Details";
             return View();
         }
     }
